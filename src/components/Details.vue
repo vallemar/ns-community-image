@@ -16,21 +16,13 @@ const items = ref(
         @tap="$navigateBack"
         class="text-center px-4 py-10 text-2xl text-gray-900 font-bold"
       />
-
-      <ContentView row="1" class="bg-[#65adf1] rounded-t-3xl">
-        <ListView
-          :items="items"
-          separatorColor="transparent"
-          class="bg-transparent"
-        >
-          <template #default="{ item }">
-            <GridLayout columns="*, auto" class="px-4">
-              <Label :text="item" class="text-3xl py-3 text-white" />
-              <ContentView col="1" class="w-5 h-5 rounded-full bg-white" />
-            </GridLayout>
-          </template>
-        </ListView>
-      </ContentView>
+      <Img
+          height="200"
+          row="1"
+          width="200"
+          src="https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8TWV4aWNhbiUyMGZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+        />
+   
     </GridLayout>
   </Page>
 </template>

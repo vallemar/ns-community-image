@@ -1,6 +1,6 @@
 // You can add your native dependencies here
 dependencies {
-//  implementation 'androidx.multidex:multidex:2.0.1'
+ implementation 'androidx.multidex:multidex:2.0.1'
 }
 
 android {
@@ -9,6 +9,8 @@ android {
   // ndkVersion ""
 
   defaultConfig {
+    multiDexEnabled true
+
     minSdkVersion 17
     // targetSdkVersion 32
 
